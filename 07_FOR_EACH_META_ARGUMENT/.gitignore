@@ -1,0 +1,27 @@
+# Local .terraform directories
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Variable files containing sensitive data
+terraform.tfvars
+*.tfvars
+
+# Private keys
+*.pem
+*.key
+
+# Terraform lock file (optional)
+.terraform.lock.hcl
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Optional: ignore temp or backup shell scripts
+*.sh~
+
