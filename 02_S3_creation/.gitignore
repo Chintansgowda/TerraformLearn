@@ -24,3 +24,4 @@ terraform.tfvars
 
 # Optional: ignore temp or backup shell scripts
 *.sh~
+.terraform/
