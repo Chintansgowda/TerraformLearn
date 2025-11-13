@@ -43,7 +43,7 @@ resource "aws_security_group" "example_sg" {
         ami = var.ami_id # Example AMI ID, replace with a valid one
         instance_type = var.instance_type  
         key_name = aws_key_pair.my_key.key_name
-        security_groups = [aws_security_group.example_sg.name]   
+        vpc_security_group_ids = [aws_security_group.example_sg.id]   
         user_data = file("nginx_ubuntu_installation.sh") # If you want to use this also as varaiables not haardcode values use varaible and locals in variable .tf
 
         
